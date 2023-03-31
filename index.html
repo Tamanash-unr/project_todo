@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/styles.css">
+    
+    <title>TODO List</title>
+</head>
+<body>
+    <div id="todoMain">
+        <!-- HTML Element for Add Task to List -->
+        <div class="add-task">
+            <img src="src/images/timeline.png" class="add-taskImage" alt="" height="30px" width="30px">
+            <input placeholder="Add a task" class="add-taskInput" id="addTask"/>
+        </div>
+
+        <!-- Buttons for 'Complete All Tasks' and 'Clear Completed' Functions -->
+        <div class="todoUtils">
+            <button id="completeAll">
+                <img src="src/images/checks-double.svg" alt="" height="25px" width="25px" id="completeAllImg">
+                Complete all tasks
+            </button>
+            <button id="clearCompleted">Clear Completed</button>
+        </div>
+
+        <hr>
+
+        <!-- Task List which will show all the Tasks -->
+        <div class="listItems">
+            <ul id="taskList">
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- Task Counter and Tasks Filter Utils to switch between Show All Tasks ('All'), Show Only Incomplete Tasks ('Incomplete'), Show Only Completed Tasks ('Completed') -->
+        <div class="todoUtils">
+            <span id="total-tasks"><span id="tasks-counter">0</span> Tasks Left</span>
+            <div class="utilBtns">
+                <button id="showAll" class="btnActive">All</button>
+                <button id="showIncomplete">Incomplete</button>
+                <button id="showCompleted">Completed</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="src/index.js"></script>
+</body>
+</html>

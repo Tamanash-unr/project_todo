@@ -1,0 +1,196 @@
+* {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+hr {
+  color: lightgrey;
+  box-shadow: 4px 2px 6px #000000;
+}
+
+#todoMain {
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 5px 10px 18px #000000;
+    width: 600px;
+}
+
+/* ------------- Styling for Add Task -------------- */
+
+.add-task {
+    display: flex;
+    background-color: rgb(233, 224, 224);
+    outline: none;
+    border: 1px solid #f3f3f3;
+    margin-bottom: 3px;
+    border-radius: 10px;
+  }
+
+  .add-taskImage {
+    padding: 11px 0px 11px 11px;
+  }
+
+  .add-taskInput {
+    width: 100%;
+    background-color: rgb(233, 224, 224);
+    outline: none;
+    font-size: 15px;
+    padding: 11px;
+    border: 1px solid rgb(233, 224, 224);
+    border-radius: 10px;
+  }
+
+/* -------------------------------------------------- */
+
+/* ---- Styling for buttons 'Complete All Tasks' and 'Clear Completed' ---- */
+
+.todoUtils {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#completeAll {
+  margin: auto auto auto 0px;
+}
+
+#completeAllImg {
+  vertical-align: middle;
+}
+
+#clearCompleted {
+  margin: auto 0px auto auto;
+}
+
+.todoUtils>button {
+    border: none;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: grey;
+}
+
+.todoUtils>button:hover { 
+    background-color: rgb(233, 224, 224);
+    cursor: pointer;
+    color: black;
+}
+
+/* --------------------------------------------------------------------- */
+
+/* ------- Styling for All, Incomplete and Completed buttons ----------- */
+.utilBtns {
+    margin: auto 0px auto auto;
+}
+.utilBtns>button {
+    border: none;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: grey;
+}
+
+.utilBtns>button:hover { 
+    background-color: rgb(233, 224, 224);
+    cursor: pointer;
+    color: black;
+}
+
+.btnActive {
+  color: black !important;
+}
+
+/* --------------------------------------------------------------------- */
+
+
+/* ---------------- Styling for Task List and List Items --------------- */
+ul li {
+  padding: 10px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: inherit;
+  align-items: center;
+}
+
+ul li:hover {
+  background: #f3f3f3;
+}
+
+#taskList {
+  padding: 0px;
+}
+
+#taskList input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+#taskList label {
+  position: relative;
+  cursor: pointer;
+}
+
+#taskList label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #0079bf;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 15px;
+}
+
+#taskList input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  width: 5px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+#taskList input:checked + label:before {
+  background: #00bf30;
+} 
+
+#taskList input:checked + label {
+  text-decoration: line-through;
+}
+
+/* --------------------------------------------------------------------- */
+
+/* ----------------- Styling for List Item Delete Button --------------- */
+
+.delete {
+  height: 50px;
+  padding: 5px 0px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* --------------------------------------------------------------------- */

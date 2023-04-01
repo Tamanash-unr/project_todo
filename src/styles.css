@@ -13,6 +13,7 @@ hr {
   box-shadow: 4px 2px 6px #000000;
 }
 
+/* ------------- Styling for Heading ------------ */
 #todoHeading {
   color: white;
   font-size: 30px;
@@ -20,7 +21,9 @@ hr {
   text-decoration-line: underline;
   text-decoration-style: double;
 }
+/* --------------------------------------------- */
 
+/* ------------ Styling for TODO Body ------------- */
 #todoMain {
     background-color: white;
     margin: auto;
@@ -30,6 +33,7 @@ hr {
     box-shadow: 5px 10px 18px grey;
     width: 600px;
 }
+/* ----------------------------------------------- */
 
 /* ------------- Styling for Add Task -------------- */
 

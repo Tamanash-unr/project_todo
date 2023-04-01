@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: grey;
+    background-image: url("./images/starrySky.jpg");
     display: grid;
     grid-template-columns: 100%;
 }
@@ -13,13 +13,21 @@ hr {
   box-shadow: 4px 2px 6px #000000;
 }
 
+#todoHeading {
+  color: white;
+  font-size: 30px;
+  text-shadow: 5px 6px 8px white;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
 #todoMain {
     background-color: white;
     margin: auto;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid;
-    box-shadow: 5px 10px 18px #000000;
+    box-shadow: 5px 10px 18px grey;
     width: 600px;
 }
 
